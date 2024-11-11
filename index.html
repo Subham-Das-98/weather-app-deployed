@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="./public/css/style.css">
+    <link rel="stylesheet" href="./public/css/light-mode.css" id="theme-src">
+    <title>WeatherY - Get World Wide Weather Report</title>
+</head>
+
+<body>
+    <div class="container" id="main-container">
+        <div id="nav">
+            <a href="" id="company">
+                <h1 id="com-name">WeatherY</h1>
+            </a>
+            <label for="toggle-btn-chk-box" id="toggle-btn">
+                <input type="checkbox" id="toggle-btn-chk-box">
+                <span id="slider"></span>
+            </label>
+        </div>
+
+        <div id="search-container">
+            <input type="text" id="search-box" placeholder="Enter Location here">
+            <button id="search-btn">Get Weather</button>
+        </div>
+
+        <div id="result-container">
+            <div id="loading-card">
+                <div>
+                    <div id="loading"></div>
+                    <span>Please wait while fetching data...</span>
+                </div>
+            </div>
+
+            <div id="serv-error-card">
+                <p id="serv-error-para-1" class="red"><i class="fa-solid fa-triangle-exclamation"></i> Weather Service
+                    Unavailable
+                </p>
+                <p id="serv-error-para-2"><i class="fa-solid fa-arrow-rotate-right"></i> Try again later...</p>
+            </div>
+
+            <div id="weather-not-found-card">
+                <p>
+                    <i class="fa-solid fa-location-dot"></i><span class="bold"> Location : <span class="upr-case"
+                            id="nf-location-name"><!--data injected by js--></span></span>
+                </p>
+                <p><i class="fa-solid fa-cloud-sun-rain"></i><span class="bold"> Sky : </span><span
+                        class="red">N/A</span></p>
+                <p><i class="fa-solid fa-temperature-half"></i><span class="bold"> Temperature : </span><span
+                        class="red">N/A</span></p>
+                <p><i class="fa-solid fa-wind"></i><span class="bold"> Wind : </span> <span class="red">N/A</span></p>
+            </div>
+
+            <div id="weather-found-card">
+                <div id="current-weather-data">
+                    <p><i class="fa-solid fa-location-dot"></i><span class="bold"> Location : <span class="upr-case"
+                                id="location-name"><!--data injected by js--></span></span>
+                    </p>
+
+                    <p><span id="sky-icon"><!--icon injected by js--></span><span class="bold"> Sky : </span><span
+                            id="location-sky"><!--data injected by js--></span>
+                    </p>
+
+                    <p><span id="temp-icon"><!--icon injected by js--></span><span class="bold"> Temperature : </span>
+                        <span id="location-temp"><!--data injected by js--></span>
+                    </p>
+
+                    <p><i class="fa-solid fa-wind"></i><span class="bold"> Wind : </span> <span
+                            id="location-wind"><!--data injected by js--></span>
+                    </p>
+                </div>
+
+                <div id="forecast-data">
+                    <h3><i class="fa-regular fa-calendar-days"></i> <span class="bold underline">Forecast</span></h3>
+                    <div id="forecast-data-table">
+                        <!-- forecast data table -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="./public/script/theme.js"></script>
+    <script type="module" src="./public/script/script.js"></script>
+</body>
+
+</html>

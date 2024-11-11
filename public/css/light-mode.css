@@ -1,0 +1,71 @@
+body {
+    background-color: rgb(173, 194, 253); 
+}
+
+/* MAIN CONTAINER */
+.container {
+    background-color: rgba(255, 255, 255, 0.80);
+}
+
+/* COMPANY LOGO */
+#com-name {
+    color: rgb(46, 48, 59);
+}
+
+/* SEARCH CONTAINER */
+#search-box {
+    background-color: rgb(200, 220, 245);
+    color: rgb(50, 52, 53);
+    box-shadow: 0px 12px 22px -9px rgb(83, 81, 81);
+}
+
+/* SEARCH BUTTON */
+#search-btn {
+    background-color: rgb(253, 171, 17);
+    border:1px solid transparent;
+    color: rgb(50, 52, 53);
+    box-shadow: 0px 12px 20px -9px rgb(83, 81, 81);
+}
+#search-btn:hover {
+    border:1px solid rgb(36, 33, 29);
+}
+
+/* LOADING CARD */
+#loading-card {
+    background-color: rgb(185, 226, 195);
+    box-shadow: 0 10px 14px -9px rgb(83, 81, 81);
+    color: rgb(50, 53, 52);
+}
+
+/* SERVER ERROR CARD */
+#serv-error-card {
+    background-color: rgb(240, 208, 208);
+    box-shadow: 0 10px 14px -9px rgb(83, 81, 81);
+}
+
+#serv-error-card #serv-error-para-2 {
+    color: rgb(50, 53, 52);
+}
+
+/* WEATHER NOT-FOUND CARD */
+#weather-not-found-card {
+    background-color: rgb(240, 208, 208);
+    box-shadow: 0 10px 14px -9px rgb(83, 81, 81);
+    color: rgb(50, 53, 52);
+}
+
+/* WEATHER FOUND CARD */
+#weather-found-card {
+    background-color: rgb(185, 226, 195);
+    box-shadow: 0 10px 14px -9px rgb(83, 81, 81);
+    color: rgb(50, 53, 52);
+}
+
+/* Forecast Data Card */
+#forecast-data{
+    background-color: rgb(143, 214, 161);
+}
+
+#forecast-data-table p{
+    background-color: rgb(161, 238, 180);
+}
